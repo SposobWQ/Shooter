@@ -4,24 +4,22 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    
+    public float gravity = 9.8f;
+    public float jumpForce;
+    public float speed;
+
     private Vector3 _moveVector;
-    public float _speed;
-    public float _jumpforce;
-    private CharacterController _chcontr;
-    private float gravity = 9.8f;
-    [SerializeField] private float _fallVelocity;
+    private float _fallVelocity = 1;
+
+    private CharacterController _characterController;
+
+    
     void Start()
     {
-        _chcontr = GetComponent<CharacterController>();
+        _characterController = GetComponent<CharacterController>();
     }
-
-    private void Update()
+    void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space)&& _chcontr.isGrounded)
-        {
-            _fallVelocity = -_jumpforce;
-        }
         _moveVector = Vector3.zero;
 
         if (Input.GetKey(KeyCode.W))
@@ -32,28 +30,31 @@ public class PlayerController : MonoBehaviour
         {
             _moveVector -= transform.forward;
         }
-        if (Input.GetKey(KeyCode.A))
-        {
-            _moveVector -= transform.right;
-        }
         if (Input.GetKey(KeyCode.D))
         {
             _moveVector += transform.right;
         }
-        
-    }
-    // Update is called once per frame
-    void FixedUpdate()
-    {
-        _chcontr.Move(_moveVector * _speed * Time.fixedDeltaTime);
-        _chcontr.Move(Vector3.down * _fallVelocity * Time.deltaTime);
-        _fallVelocity += gravity * Time.fixedDeltaTime;
-        if (_chcontr.isGrounded)
+        if (Input.GetKey(KeyCode.A))
         {
-                _fallVelocity = 0;
+            _moveVector -= transform.right;
         }
 
+        if (Input.GetKeyDown(KeyCode.Space) && _characterController.isGrounded)
+        {
+            _fallVelocity = -jumpForce;
+        }
+    }
 
+    void FixedUpdate()
+    {
+        _characterController.Move(_moveVector * speed * Time.deltaTime);
 
+        _fallVelocity += gravity * Time.fixedDeltaTime;
+        _characterController.Move(Vector3.down * _fallVelocity * Time.fixedDeltaTime);
+
+        if (_characterController.isGrounded)
+        {
+            _fallVelocity = 0;
+        }
     }
 }
