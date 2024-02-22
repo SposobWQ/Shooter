@@ -11,9 +11,9 @@ NavMeshProjectSettings:
     cost: 1
   - name: Jump
     cost: 2
-  - name: 
+  - name: "\u0447\u043C\u0441\u043C\u0441"
     cost: 1
-  - name: 
+  - name: "\u0438\u043C\u0441\u0438\u043C\u0441\u0438"
     cost: 1
   - name: 
     cost: 1
