@@ -93,6 +93,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _target: {fileID: 5699021000309790355}
+  _cameralink: {fileID: 5214283102852473918}
+  _inskyDistance: 10
 --- !u!1 &5020730156766168803
 GameObject:
   m_ObjectHideFlags: 0
@@ -186,7 +188,7 @@ GameObject:
   - component: {fileID: 1069163949970400910}
   - component: {fileID: -4709850846920554142}
   m_Layer: 0
-  m_Name: player
+  m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

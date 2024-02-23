@@ -69,12 +69,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c723b012f8fdb94eae51b4fce80d099, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _viewAngle: 180
+  _viewAngle: 360
   patrolPoint:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  player: {fileID: 0}
+  player: {fileID: 1069163949970400910, guid: 94b85d2a63df70e4494376c28d1ce2ce, type: 3}
 --- !u!136 &7299319991250969295
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -101,7 +101,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d01a30277e880c4b8ec3d35b6952ec9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _health: 3
+  _health: 100
 --- !u!1001 &7299319991293999691
 PrefabInstance:
   m_ObjectHideFlags: 0

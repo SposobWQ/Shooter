@@ -8,6 +8,11 @@ public class Camerarot : MonoBehaviour
     [SerializeField] private float minangle;
     [SerializeField] private Transform CamRotAxisTrans;
     [SerializeField] private float RotSpeed;
+
+    private void Start()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+    }
     void Update()
     {
         transform.localEulerAngles = new Vector3(0, transform.localEulerAngles.y+Time.deltaTime*RotSpeed*Input.GetAxis("Mouse X"), 0);

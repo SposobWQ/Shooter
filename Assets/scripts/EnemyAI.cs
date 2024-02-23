@@ -6,9 +6,9 @@ public class EnemyAI : MonoBehaviour
 {
     public float _viewAngle;
     private bool _isPlayerNoticed;
-    public List<Transform> patrolPoint;
-    private NavMeshAgent _navMeshAgent;
-    public PlayerController player;
+    public List<Transform> PatrolPoint;
+    private NavMeshAgent _NavMeshAgent;
+    public PlayerController Player;
     void Start()
     {
         initcomponentlinks();
@@ -18,13 +18,13 @@ public class EnemyAI : MonoBehaviour
 
     private void initcomponentlinks() 
     {
-        _navMeshAgent = GetComponent<NavMeshAgent>();
+        _NavMeshAgent = GetComponent<NavMeshAgent>();
     }
 
 
     void Update()
     {
-        Debug.Log(_isPlayerNoticed);
+        
         NoticedPlayerUpdate();
         ChaseUpdate();
         PatrolUpdate();
@@ -32,14 +32,14 @@ public class EnemyAI : MonoBehaviour
     }
     private void NoticedPlayerUpdate()
     {
-         var direction = player.transform.position - transform.position;
+         var direction = Player.transform.position - transform.position;
         _isPlayerNoticed = false;
         if (Vector3.Angle(transform.forward, direction) < _viewAngle)
         {
             RaycastHit hit;
             if (Physics.Raycast(transform.position + Vector3.up, direction, out hit))
             {
-                if (hit.collider.gameObject == player.gameObject)
+                if (hit.collider.gameObject == Player.gameObject)
                 {
                     _isPlayerNoticed = true;
                 }
@@ -52,7 +52,7 @@ public class EnemyAI : MonoBehaviour
     {
         if (!_isPlayerNoticed)
         {
-            if (_navMeshAgent.remainingDistance == 0)
+            if (_NavMeshAgent.remainingDistance == 0)
             {
                 PickNewPatrolPoint();
             }
@@ -62,12 +62,12 @@ public class EnemyAI : MonoBehaviour
     {
         if (_isPlayerNoticed)
         {
-            _navMeshAgent.destination = player.transform.position;
+            _NavMeshAgent.destination = Player.transform.position;
         }
 
     }
     private void PickNewPatrolPoint()
     {
-        _navMeshAgent.destination = patrolPoint[Random.Range(0, patrolPoint.Count)].position;
+        _NavMeshAgent.destination = PatrolPoint[Random.Range(0, PatrolPoint.Count)].position;
     }
 }
