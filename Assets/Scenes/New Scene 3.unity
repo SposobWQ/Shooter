@@ -482,6 +482,26 @@ PrefabInstance:
       objectReference: {fileID: 1696821967}
     - target: {fileID: 7299319991250969280, guid: 8952c2693c32a6242b47386728995f1e,
         type: 3}
+      propertyPath: PatrolPoint.Array.data[0]
+      value: 
+      objectReference: {fileID: 1360706759}
+    - target: {fileID: 7299319991250969280, guid: 8952c2693c32a6242b47386728995f1e,
+        type: 3}
+      propertyPath: PatrolPoint.Array.data[1]
+      value: 
+      objectReference: {fileID: 598820600}
+    - target: {fileID: 7299319991250969280, guid: 8952c2693c32a6242b47386728995f1e,
+        type: 3}
+      propertyPath: PatrolPoint.Array.data[2]
+      value: 
+      objectReference: {fileID: 759033335}
+    - target: {fileID: 7299319991250969280, guid: 8952c2693c32a6242b47386728995f1e,
+        type: 3}
+      propertyPath: PatrolPoint.Array.data[3]
+      value: 
+      objectReference: {fileID: 830038484}
+    - target: {fileID: 7299319991250969280, guid: 8952c2693c32a6242b47386728995f1e,
+        type: 3}
       propertyPath: patrolPoint.Array.data[0]
       value: 
       objectReference: {fileID: 625497864}
@@ -2138,6 +2158,26 @@ PrefabInstance:
       propertyPath: Player
       value: 
       objectReference: {fileID: 1696821967}
+    - target: {fileID: 7299319991250969280, guid: 8952c2693c32a6242b47386728995f1e,
+        type: 3}
+      propertyPath: PatrolPoint.Array.data[0]
+      value: 
+      objectReference: {fileID: 2007881382}
+    - target: {fileID: 7299319991250969280, guid: 8952c2693c32a6242b47386728995f1e,
+        type: 3}
+      propertyPath: PatrolPoint.Array.data[1]
+      value: 
+      objectReference: {fileID: 625497864}
+    - target: {fileID: 7299319991250969280, guid: 8952c2693c32a6242b47386728995f1e,
+        type: 3}
+      propertyPath: PatrolPoint.Array.data[2]
+      value: 
+      objectReference: {fileID: 1712487515}
+    - target: {fileID: 7299319991250969280, guid: 8952c2693c32a6242b47386728995f1e,
+        type: 3}
+      propertyPath: PatrolPoint.Array.data[3]
+      value: 
+      objectReference: {fileID: 1885816043}
     - target: {fileID: 7299319991250969280, guid: 8952c2693c32a6242b47386728995f1e,
         type: 3}
       propertyPath: patrolPoint.Array.data[0]
@@ -4706,7 +4746,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 70deee80a597ea14a90cc01f930f9642, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -5028,6 +5068,26 @@ PrefabInstance:
       propertyPath: patrolPoint.Array.size
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 7299319991250969280, guid: 8952c2693c32a6242b47386728995f1e,
+        type: 3}
+      propertyPath: PatrolPoint.Array.data[0]
+      value: 
+      objectReference: {fileID: 2071032957}
+    - target: {fileID: 7299319991250969280, guid: 8952c2693c32a6242b47386728995f1e,
+        type: 3}
+      propertyPath: PatrolPoint.Array.data[1]
+      value: 
+      objectReference: {fileID: 1626476359}
+    - target: {fileID: 7299319991250969280, guid: 8952c2693c32a6242b47386728995f1e,
+        type: 3}
+      propertyPath: PatrolPoint.Array.data[2]
+      value: 
+      objectReference: {fileID: 1008594962}
+    - target: {fileID: 7299319991250969280, guid: 8952c2693c32a6242b47386728995f1e,
+        type: 3}
+      propertyPath: PatrolPoint.Array.data[3]
+      value: 
+      objectReference: {fileID: 1736291527}
     - target: {fileID: 7299319991250969280, guid: 8952c2693c32a6242b47386728995f1e,
         type: 3}
       propertyPath: patrolPoint.Array.data[0]

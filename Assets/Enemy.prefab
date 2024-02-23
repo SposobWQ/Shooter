@@ -70,11 +70,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _viewAngle: 360
-  patrolPoint:
+  PatrolPoint:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  player: {fileID: 1069163949970400910, guid: 94b85d2a63df70e4494376c28d1ce2ce, type: 3}
+  - {fileID: 0}
+  Player: {fileID: 1069163949970400910, guid: 94b85d2a63df70e4494376c28d1ce2ce, type: 3}
 --- !u!136 &7299319991250969295
 CapsuleCollider:
   m_ObjectHideFlags: 0
