@@ -10,17 +10,17 @@ public class Aim : MonoBehaviour
 
     void Update()
     {
-        var ray = _cameralink.ViewportPointToRay(new Vector3(0.5f, 0.7f, 0));
+        var ray = _cameralink.ViewportPointToRay(new Vector3(0.5f, 0.59f, 0));
 
         RaycastHit hit;
         if (Physics.Raycast(ray, out hit))
-        {
+        {   
             _target.position = hit.point;
         }
         else
         {
             _target.position = ray.GetPoint(_inskyDistance);
         }
-        transform.LookAt(_target);  
+        transform.LookAt(_target.position);  
     }
 }

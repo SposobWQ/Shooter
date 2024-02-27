@@ -120,7 +120,7 @@ NavMeshSettings:
     accuratePlacement: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 23800000, guid: e56378edb27720c4a81a30e6df9e2ea1, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: ebc8b18bb4bb19c4e8987dd7e24586bd, type: 2}
 --- !u!1 &97059017
 GameObject:
   m_ObjectHideFlags: 0
@@ -710,6 +710,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 727821209}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &831446494 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5351264018414905891, guid: 94b85d2a63df70e4494376c28d1ce2ce,
+    type: 3}
+  m_PrefabInstance: {fileID: 1814856393}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d97a692f85044f942a6fbbc473ae43e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &880964577
 GameObject:
   m_ObjectHideFlags: 0
@@ -1566,6 +1578,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5349654184540539300, guid: 94b85d2a63df70e4494376c28d1ce2ce,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 94b85d2a63df70e4494376c28d1ce2ce, type: 3}
 --- !u!1 &1886113311
@@ -2133,6 +2150,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7299319991250969280, guid: 8952c2693c32a6242b47386728995f1e,
+        type: 3}
+      propertyPath: _playerhealth
+      value: 
+      objectReference: {fileID: 831446494}
+    - target: {fileID: 7299319991250969280, guid: 8952c2693c32a6242b47386728995f1e,
+        type: 3}
+      propertyPath: PatrolPoint.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7299319991250969280, guid: 8952c2693c32a6242b47386728995f1e,
+        type: 3}
+      propertyPath: PatrolPoint.Array.data[0]
+      value: 
+      objectReference: {fileID: 402267090}
+    - target: {fileID: 7299319991250969280, guid: 8952c2693c32a6242b47386728995f1e,
+        type: 3}
+      propertyPath: PatrolPoint.Array.data[1]
+      value: 
+      objectReference: {fileID: 1889908466}
     - target: {fileID: 7299319991250969280, guid: 8952c2693c32a6242b47386728995f1e,
         type: 3}
       propertyPath: patrolPoint.Array.data[0]

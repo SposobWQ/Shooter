@@ -49,9 +49,9 @@ NavMeshAgent:
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
-  m_StoppingDistance: 0
+  m_StoppingDistance: 1
   m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 1
+  m_AutoBraking: 0
   m_AutoRepath: 1
   m_Height: 1.5
   m_BaseOffset: 0
@@ -69,13 +69,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c723b012f8fdb94eae51b4fce80d099, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _viewAngle: 360
+  _viewAngle: 90
   PatrolPoint:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   Player: {fileID: 1069163949970400910, guid: 94b85d2a63df70e4494376c28d1ce2ce, type: 3}
+  _damage: 30
+  _playerhealth: {fileID: 0}
 --- !u!136 &7299319991250969295
 CapsuleCollider:
   m_ObjectHideFlags: 0
